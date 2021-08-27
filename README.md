@@ -1,4 +1,26 @@
 # Microservices Arhitecture
+
+## Definition
+"The microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and
+communicating with lightweight mechanisms."
+James Lewis and Martin Fowler, Thoughtworks
+
+Microservices are small, autonomous services that work together with other microservices. They are independently deployable and scalable, represent a small
+bounded context and are autonomously developed.
+
+## Comparison with monolithic arhitecture
+- pros
+	- much simpler to scale
+	- faster onboarding of new team members
+	- higher autonomy per microservice
+	- code easier to understand
+	- more emerging technologies available
+	- much more easier to adopt new technologies
+	- can use multiple programming languages
+	- can adopt and use multiple data storage solutions
+- cons
+	- harder to build, test and deploy
+
 ## Design Patterns
 - individually deployable to be considered microservices (containers preferred)
 - service discovery (registry) to find where another microservice is
@@ -13,6 +35,7 @@
 - when horizontal scalability is not possible (costs, cloud provider limitations, etc.) to avoid downtime you can implement throttling at API Gateway
 (better to serve a max number of clients than none) but keep in mind a fair usage policy per client or user
 - Security Proxy Service (Sidecar Pattern or Service Mesh), early days though - see Istio for Kubernetes environments
+- BFF, backends for frontends, separate API contracts or gateways for each type of consumer (web, mobile)
 
 ## Communication
 - synchronous (HTTP)
