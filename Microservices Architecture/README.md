@@ -11,7 +11,7 @@ bounded context and are autonomously developed.
 ## Comparison with monolithic architecture and other concerns, implications and thoughts
 
 ### Pros
-- much simpler to scale
+- much easier scalability (even selective) and therefore high availability
 - higher autonomy per microservice
 - more emerging technologies available
 - much easier to adopt new technologies
@@ -25,7 +25,6 @@ bounded context and are autonomously developed.
 - unit testing will generally be easier to implement via mocking and isolation
 - code easier to understand which will lead to faster on-boarding of new team members
 - much easier to extend functionality (features, 3rd party, etc.)
-- much easier scalability (even selective) and therefore high availability
 - overall, 4 key advantages (time to market, extensibility, replaceability, scalability)
 
 ### Cons
